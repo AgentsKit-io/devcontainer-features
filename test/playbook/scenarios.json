@@ -1,0 +1,16 @@
+{
+  "default": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "playbook": {}
+    }
+  },
+  "explicit-version": {
+    "image": "debian:12",
+    "features": {
+      "playbook": {
+        "gatesVersion": "0.1.0"
+      }
+    }
+  }
+}

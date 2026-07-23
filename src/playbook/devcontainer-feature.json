@@ -1,0 +1,30 @@
+{
+  "id": "playbook",
+  "version": "1.0.0",
+  "name": "AgentsKit Playbook",
+  "description": "Installs deterministic quality gates for software built with AI coding agents.",
+  "documentationURL": "https://playbook.agentskit.io/docs/scripts",
+  "licenseURL": "https://github.com/AgentsKit-io/devcontainer-features/blob/main/LICENSE",
+  "keywords": [
+    "agents",
+    "agentskit",
+    "quality",
+    "governance",
+    "playbook"
+  ],
+  "options": {
+    "gatesVersion": {
+      "type": "string",
+      "proposals": [
+        "0.1.0"
+      ],
+      "default": "0.1.0",
+      "description": "Exact @agentskit/playbook package version to install."
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  }
+}
